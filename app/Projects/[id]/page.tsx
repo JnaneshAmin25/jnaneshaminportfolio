@@ -2,7 +2,6 @@ import { projects } from '@/data/projects'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import Link from 'next/link'
 
 export async function generateStaticParams() {
   return projects.map(project => ({
