@@ -14,7 +14,7 @@ export const certifications: certificate[] = [
     institution: "MongoDB Inc.",
     duration: "2024",
     description: "An online non-credit course authorized by MongoDB Inc. and offered through Coursera",
-    image: "/certificates/introduction_to_mongodb.png"
+    image: "/certificates/introduction_to_mongoDB.png"
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const certifications: certificate[] = [
     institution: "Lets Upgrade",
     duration: "2025",
     description: "Mastered MongoDB CRUD operations, indexing, and Atlas deployment through hands-on projects",
-    image: "/certificates/letsupgrade_mongodbBootcamp.png"
+    image: "/certificates/letsUpgrade_mongodbBootcamp.png"
   },
   {
     id: 4,

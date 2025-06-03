@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import ScrollToTop from "@/public/Helper/ScrollToTop";
-import VisitorLogger from "./hooks/VisitorLogger";
 import Head from 'next/head';
 import { projects } from "@/data/projects";
 import BackButton from '../animatedComponents/BAckButton';
@@ -35,7 +34,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         ))}
       </Head>
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-900`}>
-        <VisitorLogger />
         <Navbar />
         <BackButton /> 
         <main className="min-h-screen pt-16">
