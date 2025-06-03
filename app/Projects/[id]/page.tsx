@@ -21,11 +21,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 	return (
 		<div className="min-h-screen bg-white dark:bg-gray-900 pt-30 pb-12">
 			<div className="container mx-auto px-6">
-				{/* Back Button */}
-				<Link href="/" className="inline-flex items-center text-blue-600 dark:text-blue-400 mb-6 hover:underline" scroll={false}>
-					← Back to Projects
-				</Link>  
-				
 				<div className="flex flex-col lg:flex-row gap-8">
 					{/* Project Content*/}
 					<div className="lg:w-1/2 order-2 lg:order-1">
