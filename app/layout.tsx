@@ -8,6 +8,7 @@ import Head from 'next/head';
 import { projects } from "@/data/projects";
 import BackButton from '../animatedComponents/BAckButton';
 import ClientLayout from "./ClientLayout";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ['latin'] });
 export const dynamic = 'auto';
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="min-h-screen pt-16">
           <ClientLayout> 
             {children} 
+            <Analytics />
           </ClientLayout> 
         </main>
         <Footer />
