@@ -77,7 +77,7 @@ export default function AboutSection() {
 	}, [])
 
 	return (
-		<section ref={sectionRef} id="about" className="py-25 relative min-h-screen flex items-center justify-center overflow-hidden">
+		<section ref={sectionRef} id="about" className="py-15 md:py-20 relative min-h-screen flex items-center justify-center overflow-hidden">
 			{/* Background Image with Overlay */}
 			<div className="absolute inset-0 z-0">
 				<Image src="/images/about_bg.png" alt="UI/UX Design Workspace" fill className="object-cover" fetchPriority="high" loading="eager"/>
