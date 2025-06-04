@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} bg-gray-900`}>
         <Navbar />
         <BackButton /> 
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen">
           <ClientLayout> 
             {children} 
             <Analytics />

@@ -20,7 +20,7 @@ export default function ProjectsSection() {
 				opacity: 1,
 				y: 0,
 				duration: 0.8,
-				delay: 0.6,
+				delay: 0.4,
 				ease: "power2.out",
 				scrollTrigger: {
 				trigger: seeMoreRef.current,
@@ -30,7 +30,6 @@ export default function ProjectsSection() {
 			}
 		)
 
-
 		gsap.fromTo(headingRef.current, 
 			{ 
 				opacity: 0, 
@@ -39,7 +38,7 @@ export default function ProjectsSection() {
 			{
 				opacity: 1,
 				y: 0,
-				duration: 0.8,
+				duration: 0.6,
 				ease: "power2.out",
 				scrollTrigger: {
 					trigger: headingRef.current,
@@ -53,13 +52,12 @@ export default function ProjectsSection() {
 		gsap.fromTo(subheadingRef.current,
 			{
 				opacity: 0,
-				y: 30
+				y: 50
 			},
 			{
 				opacity: 1,
 				y: 0,
 				duration: 0.6,
-				delay: 0.2,
 				ease: "power2.out",
 				scrollTrigger: {
 					trigger: subheadingRef.current,
@@ -79,7 +77,7 @@ export default function ProjectsSection() {
 				opacity: 1,
 				y: 0,
 				duration: 0.8,
-				delay: 0.2,
+				delay: 0.3,
 				ease: "power2.out",
 				scrollTrigger: {
 					trigger: gridRef.current,

@@ -5,6 +5,7 @@ import { Project } from '@/types/project'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Link from 'next/link' 
+import NProgress from 'nprogress';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -44,8 +45,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 		)
 	}, [index])
     
+	const handleLinkClick = () => {
+			NProgress.start();
+	};
 	return (
-			<div ref={cardRef} className="relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-1 hover:border-blue-600 border-blue-900" onClick={handleCardClick} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+			<div ref={cardRef} className="relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-1 hover:border-blue-600 border-blue-900" onClick={() =>{handleCardClick(); handleLinkClick()}} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
 				
 				{/* Ripple effect */}
 				{ripple && (

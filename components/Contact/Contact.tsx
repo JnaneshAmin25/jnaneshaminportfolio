@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { gsap } from 'gsap'
+import NProgress from 'nprogress';
 
 export default function ContactSection() {
 
@@ -100,6 +101,12 @@ useEffect(() => {
 		})
 	}
 
+	const handleLinkClick = () => {
+		if(isSubmitting){
+			NProgress.start();
+		}
+	};
+
 	return (
 		<section id="contact" className="py-20 bg-gray-900">
 			<div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-gray-900 to-transparent pointer-events-none z-0" />
@@ -128,7 +135,7 @@ useEffect(() => {
 									</div>
 									<div>
 										<h4 className="text-gray-300 font-medium">Email</h4>
-										<a href="mailto:jnaneshamin25@gmail.com" className="text-blue-400 hover:underline">jnaneshamin25@gmail.com</a>
+										<a href="mailto:jnaneshamin25@gmail.com" className="text-blue-400 hover:underline" title="Click to send email">jnaneshamin25@gmail.com</a>
 									</div>
 								</div>
 								
@@ -206,7 +213,7 @@ useEffect(() => {
 								</div>
 								
 								{/* Submit */}
-								<button type="submit" disabled={isSubmitting} className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition disabled:opacity-50">
+								<button type="submit" onClick={handleLinkClick} disabled={isSubmitting} className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition disabled:opacity-50">
 									{isSubmitting ? 'Sending...' : 'Send Message'}
 								</button>
 							</form>

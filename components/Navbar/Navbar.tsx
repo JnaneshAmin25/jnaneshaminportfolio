@@ -26,7 +26,6 @@ export default function Navbar() {
 	 }, [])
 
 	 useEffect(() => {
-		  // Set active link based on current path
 		  setActiveLink(pathname);
 	 }, [pathname]);
 
@@ -51,7 +50,7 @@ export default function Navbar() {
 						  <LogoLink/>
 
 						  {/* Desktop Navigation */}
-						  <div className="hidden md:flex items-center space-x-6">
+						  <div className="hidden md:flex items-center space-x-8">
 								<Link href="/about" onClick={() => handleLinkClick('/about')} className={`nav-link relative group ${isActive('/about') ? 'text-blue-400 font-medium' : 'text-gray-300'}`}>
 									 About
 									 <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full ${isActive('/about') ? 'w-full' : ''}`}></span>
