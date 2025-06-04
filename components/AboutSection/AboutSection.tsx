@@ -89,12 +89,12 @@ export default function AboutSection() {
 			<div className="container mx-auto px-6 relative">
 				<div className="flex flex-col md:flex-row items-center md:justify-start md:pl-15 md:gap-8">
 					{/* Content Div - Comes first in DOM for mobile */}
-					<div ref={aboutRef} className="opacity-0 z-20 order-2 md:order-1 max-w-2xl bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20">
-						<h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+					<div ref={aboutRef} className="opacity-0 z-20 order-2 md:order-1 max-w-2xl bg-gray-900/90 backdrop-blur-sm p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20">
+						<h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
 							About <span className="text-blue-500">Me</span>
 						</h2>
 						
-						<p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+						<p className="text-lg text-gray-300 mb-8 leading-relaxed">
 							Passionate full-stack developer with 3+ years of experience building modern web applications. 
 							I specialize in creating performant, accessible, and visually appealing digital experiences.
 						</p>

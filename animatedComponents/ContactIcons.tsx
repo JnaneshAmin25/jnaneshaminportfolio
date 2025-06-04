@@ -6,13 +6,13 @@ type Props = {
 const ContactIcons = ({size}:Props) => {
   return (
     <>
-        <a href="https://github.com/JnaneshAmin25" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition" aria-label="GitHub">
+        <a href="https://github.com/JnaneshAmin25" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition" aria-label="GitHub">
             <FaGithub size={size} />
         </a>
-        <a href="https://www.linkedin.com/in/jnanesh-amin-b84ab5313/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/jnanesh-amin-b84ab5313/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition" aria-label="LinkedIn">
             <FaLinkedin size={size} />
         </a>
-        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition" aria-label="Twitter">
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition" aria-label="Twitter">
             <FaTwitter size={size} />
         </a>
     </>

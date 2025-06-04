@@ -40,10 +40,10 @@ const Certification = () => {
 	}
 
 	return (
-		<section className="p-6 dark:bg-gray-800">
+		<section className="p-6 bg-gray-800">
 
 			{/* Heading */}
-			<motion.h2 className="text-3xl md:text-4xl font-bold text-center mb-12 dark:text-white" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={headingVariants}>
+			<motion.h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={headingVariants}>
 				My Certifications
 				<motion.span className="block w-20 h-1 bg-blue-500 mx-auto mt-4" initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }}/>
 			</motion.h2>

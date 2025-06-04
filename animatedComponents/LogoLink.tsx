@@ -46,7 +46,7 @@ export default function LogoLink() {
 	};
 
 	return (
-		<Link onClick={() => handleLinkClick('/')} href="/" ref={textRef} className="text-2xl md:text-4xl font-bold text-gray-800 dark:text-white custom-logo-font char">
+		<Link onClick={() => handleLinkClick('/')} href="/" ref={textRef} className="text-2xl md:text-4xl font-bold text-white custom-logo-font char">
 			Jnanesh Amin
 		</Link>
 	);

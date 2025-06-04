@@ -22,10 +22,10 @@ export default function SkillsCarousel() {
 	}, [])
 
 	return (
-		<section id="skills" className="py-16 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+		<section id="skills" className="py-16 bg-gray-900 overflow-hidden">
 			<div className="text-center mb-8">
-				<h2 className="text-3xl font-bold text-gray-800 dark:text-white">Tech Stack</h2>
-				<p className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+				<h2 className="text-3xl font-bold text-white">Tech Stack</h2>
+				<p className="text-gray-300 max-w-xl mx-auto">
 					My current tools of the trade — on a non-stop loop 🌀
 				</p>
 			</div>
@@ -34,8 +34,8 @@ export default function SkillsCarousel() {
 				<div className="flex w-max" ref={carouselRef}>
 					{[...skills, ...skills].map((skill, index) => (
 						<div key={`${skill.name}-${index}`} className="flex flex-col items-center justify-center px-6 sm:px-10 py-4">
-							<skill.icon className="text-4xl text-blue-600 dark:text-blue-300 mb-2" />
-							<span className="text-sm font-medium text-gray-700 dark:text-gray-200">
+							<skill.icon className="text-4xl text-blue-300 mb-2" />
+							<span className="text-sm font-medium text-gray-200">
 								{skill.name}
 							</span>
 						</div>

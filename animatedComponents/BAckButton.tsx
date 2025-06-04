@@ -18,11 +18,11 @@ export default function BackButton() {
   return (
     <button 
       onClick={handleBack}
-      className="fixed top-20 left-6 z-40 flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
+      className="fixed top-20 left-6 z-40 flex items-center gap-2 px-4 py-2 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition-all"
       aria-label="Go back"
     >
-      <FaArrowLeft className="text-gray-700 dark:text-gray-300" />
-      <span className="text-gray-700 dark:text-gray-300 hidden sm:inline">Back</span>
+      <FaArrowLeft className="text-gray-300" />
+      <span className="text-gray-300 hidden sm:inline">Back</span>
     </button>
   );
 }

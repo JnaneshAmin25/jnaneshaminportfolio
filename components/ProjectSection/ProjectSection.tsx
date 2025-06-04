@@ -92,19 +92,19 @@ export default function ProjectsSection() {
 	}, [])
 
 	return (
-		<section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+		<section id="projects" className="py-20 bg-gray-900">
 			<div className="container mx-auto px-6">
 				{/* Simple header with coding touch */}
 				<div className="text-center mb-16">
 					<div ref={headingRef} className="heading-container opacity-0 transform translate-y-8 transition-all duration-800 ease-out">
-						<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 font-mono">
+						<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 font-mono">
 							&lt; My Projects /&gt;
 						</h2>
 						<div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
 					</div>
 					
 					<div ref={subheadingRef} className="subheading-container opacity-0 transform translate-y-6 transition-all duration-800 ease-out delay-200">
-						<p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+						<p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
 							Here are some of my recent works. Each project was built to solve specific problems and improve user experiences.
 						</p>
 					</div>

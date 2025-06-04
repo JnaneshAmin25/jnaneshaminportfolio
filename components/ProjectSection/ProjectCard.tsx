@@ -45,11 +45,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 	}, [index])
     
 	return (
-			<div ref={cardRef} className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-1 hover:border-blue-600 dark:border-blue-900" onClick={handleCardClick} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+			<div ref={cardRef} className="relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-1 hover:border-blue-600 border-blue-900" onClick={handleCardClick} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
 				
 				{/* Ripple effect */}
 				{ripple && (
-					<span className="pointer-events-none absolute inset-0 z-0 animate-ripple bg-blue-100/30 dark:bg-blue-500/20 rounded-xl"></span>
+					<span className="pointer-events-none absolute inset-0 z-0 animate-ripple bg-blue-500/20 rounded-xl"></span>
 				)}
 
 				{/* Enhanced Demo Button - Single Line Classes */}
@@ -60,7 +60,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 						</div>
 					) : (
 						project.liveLink ? (
-							<Link href={project.liveLink} target="_blank" rel="noopener noreferrer" className={`absolute top-4 right-4 flex items-center justify-between px-4 py-1.5 z-10 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-600 dark:to-blue-800 cursor-pointer text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform-gpu hover:scale-105 hover:brightness-110 group text-sm font-medium ${isHovered ? 'md:opacity-100 md:translate-y-0' : 'md:opacity-0 md:translate-y-1'} opacity-100 transl;ate-y-0`}>
+							<Link href={project.liveLink} target="_blank" rel="noopener noreferrer" className={`absolute top-4 right-4 flex items-center justify-between px-4 py-1.5 z-10 bg-gradient-to-r from-blue-600 to-blue-800 cursor-pointer text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform-gpu hover:scale-105 hover:brightness-110 group text-sm font-medium ${isHovered ? 'md:opacity-100 md:translate-y-0' : 'md:opacity-0 md:translate-y-1'} opacity-100 transl;ate-y-0`}>
 									<span className="flex items-center gap-1.5">
 										Demo <MdOpenInNew className="text-sm transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
 									</span>
@@ -81,15 +81,15 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 					</div>
 
 					{/* Project Details */}
-					<h3 className={`${isHovered?'':''} text-xl transition-all duration-300 font-bold text-blue-800 dark:text-blue-200 mb-2`}>
+					<h3 className={`${isHovered?'':''} text-xl transition-all duration-300 font-bold text-blue-200 mb-2`}>
 						{project.cardTitle}
 					</h3>
-					<p className="text-gray-600 dark:text-gray-300 mb-4">
+					<p className="text-gray-300 mb-4">
 						{project.smallDescription}
 					</p>
 					<div className="flex flex-wrap gap-2 mb-4">
 						{project.technologies.slice(0, 3).map((tech, index) => (
-							<span key={index} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+							<span key={index} className="px-3 py-1 bg-blue-900 text-blue-200 text-sm rounded-full">
 								{tech}
 							</span>
 						))}

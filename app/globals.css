@@ -19,7 +19,7 @@ html {
 
 /* Custom styles */
 .nav-link {
-  @apply text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition;
+  @apply text-gray-300 hover:text-blue-400 transition;
 }
 
 /* Smooth scrolling */
@@ -33,7 +33,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-100 dark:bg-gray-800;
+  @apply bg-gray-800;
 }
 
 ::-webkit-scrollbar-thumb {
