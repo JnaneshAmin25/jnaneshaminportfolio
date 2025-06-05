@@ -107,7 +107,7 @@ export default function ProjectsSection() {
 						</p>
 					</div>
 				</div>
-				
+					
 				{/*projects*/}
 				<div ref={gridRef} className="grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					{projects

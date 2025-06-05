@@ -59,6 +59,10 @@ export default function Navbar() {
 									 Projects
 									 <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full ${isActive('/Projects') ? 'w-full' : ''}`}></span>
 								</Link>
+								<Link href="/Certificates" onClick={() => handleLinkClick('/Acheivements')} className={`nav-link relative group ${isActive('/Acheivements') ? 'text-blue-400 font-medium' : 'text-gray-300'}`}>
+									 Certificates
+									 <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full ${isActive('/Acheivements') ? 'w-full' : ''}`}></span>
+								</Link>
 								<Link href="/Acheivements" onClick={() => handleLinkClick('/Acheivements')} className={`nav-link relative group ${isActive('/Acheivements') ? 'text-blue-400 font-medium' : 'text-gray-300'}`}>
 									 Achievements
 									 <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full ${isActive('/Acheivements') ? 'w-full' : ''}`}></span>
