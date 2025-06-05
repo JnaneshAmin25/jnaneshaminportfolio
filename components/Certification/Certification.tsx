@@ -50,7 +50,9 @@ const Certification = () => {
 
 			{/* Certificates Grid */}
 			<motion.div className="grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={containerVariants}>
-				{certifications.map((certificate, index) => (
+				{certifications
+				.slice(0, 4)
+				.map((certificate, index) => (
 					<motion.div key={certificate.id} className="transform transition-all duration-300 hover:scale-105 hover:-translate-y-1" style={{ animationDelay: `${index * 100}ms` }} variants={itemVariants}>
 						<CertificateCard certificate={certificate} index={index} />
 					</motion.div>

@@ -1,3 +1,4 @@
+"use client"
 import { certificate } from '@/types/certificate'
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'

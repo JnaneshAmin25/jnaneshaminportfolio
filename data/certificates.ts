@@ -31,5 +31,14 @@ export const certifications: certificate[] = [
     duration: "2024",
     description: "An online non-credit project authorized by Coursera Project Network and offered through Coursera",
     image: "/certificates/wireshark_packetTracer.png"
-  }
+  },
+  {
+    id: 5,
+    certificateName: "Tailwind CSS Bootcamp",
+    institution: "Lets Upgrade",
+    duration: "2025",
+    description: "An online non-credit project authorized by Coursera Project Network and offered through Coursera",
+    image: "/certificates/tailwind_css_bootcamp.png"
+  },
+  
 ]
