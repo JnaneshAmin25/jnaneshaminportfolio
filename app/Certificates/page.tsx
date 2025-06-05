@@ -1,5 +1,4 @@
 import CertificateCard from '@/components/Certification/CertificateCard'
-import Certification from '@/components/Certification/Certification'
 import { certifications } from '@/data/certificates'
 import React from 'react'
 
