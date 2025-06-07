@@ -9,6 +9,7 @@ import { projects } from "@/data/projects";
 import BackButton from '../animatedComponents/BAckButton';
 import ClientLayout from "./ClientLayout";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] });
 export const dynamic = 'auto';
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ClientLayout> 
             {children} 
             <Analytics />
+            <SpeedInsights/>
           </ClientLayout> 
         </main>
         <Footer />
